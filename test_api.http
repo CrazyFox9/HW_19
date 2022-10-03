@@ -1,0 +1,62 @@
+GET http://127.0.0.1:10001/genres/
+Accept: application/json
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkVkdWFyZCIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjY3NDAxODM2fQ.HWQRTMBB0x9CEzh0mJkaZ4MC8emCzxaO_Mk56fUvfaw
+
+###
+
+POST http://127.0.0.1:10001/genres/
+Accept: application/json
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRqb2huIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjc2MDQ2MzI5fQ.rZlQ1I40tv9yFJBn_rmlJjRCraTtB0LpbIzV0M1FwUQ
+
+{
+  "name": "Test"
+}
+
+###
+
+GET http://127.0.0.1:10001/genres/19
+Accept: application/json
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkVkdWFyZCIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjY3NDAxODM2fQ.HWQRTMBB0x9CEzh0mJkaZ4MC8emCzxaO_Mk56fUvfaw
+
+###
+
+PUT http://127.0.0.1:10001/users/3
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Updated",
+  "password": "Updated",
+  "role": "Updated"
+}
+
+###
+
+DELETE http://127.0.0.1:10001/genres/19
+Accept: application/json
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRqb2huIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjc2MDQ2MzI5fQ.rZlQ1I40tv9yFJBn_rmlJjRCraTtB0LpbIzV0M1FwUQ
+
+###
+
+POST http://127.0.0.1:10001/auth/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Djohn",
+  "password": "sdfdgdge5"
+}
+
+###
+
+PUT http://127.0.0.1:10001/auth/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkVkdWFyZCIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjY3NDAxODA2fQ.Os413lotcC2q8ZPsi7_NYIgwUJ_uSvyoMDKaW_8riLY"
+}
